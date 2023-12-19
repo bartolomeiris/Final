@@ -210,7 +210,7 @@ a{
         padding: 2rem;
     }
 
-    .about{
+    .about .row{
         display: flex;
         flex-direction: column;
         justify-content: center;

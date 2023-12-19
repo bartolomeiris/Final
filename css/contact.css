@@ -294,12 +294,7 @@ a{
     section{
         padding: 2rem;
     }
-
-    .contact{
-       display: block;
-       flex-wrap: wrap;
-    }
-
+    
     .heading{
         margin-top: 20%;
         padding-bottom: 1rem;
