@@ -4,7 +4,6 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
 }
 
 body{
@@ -24,10 +23,18 @@ section{
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 1000;
+    text-transform: uppercase;
 }
 
 .header .logo img{
     height: 4rem;
+}
+
+.header .logo span{
+    color: black;
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding-left: 10px;
 }
 
 a{

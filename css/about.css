@@ -4,7 +4,6 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
 }
 
 body{
@@ -24,10 +23,18 @@ section{
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 1000;
+    text-transform: uppercase;
 }
 
 .header .logo img{
     height: 4rem;
+}
+
+.header .logo span{
+    color: black;
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding-left: 10px;
 }
 
 a{
@@ -106,6 +113,20 @@ a{
     display: none;
 }
 
+
+
+.about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
 .heading{
     text-align: center;
     color: #fff;
@@ -119,46 +140,47 @@ a{
     color: orange;
     text-transform: uppercase;
 }
-
-.about .row{
-    display: flex;
-    align-items: center;
-    background: black;
-    flex-wrap: wrap;
-}
-
 .about .row .image{
-    flex:1 1 15rem;
+    flex: 1 1 30rem;
 }
 
 .about .row .image img{
-    width: 100%;
+    width: 90%
 }
 
 .about .row .content{
-    flex:1 1 15rem;
-    padding: 2rem;
+    flex: 1 1 25rem;
+    padding: 1rem;
 }
 
 .about .row .content h3{
     font-size: 3rem;
-    color: #fff;
+    color: white;
 }
 
+
 .about .row .content p{
-    font-size: 1.6rem;
-    color: #ccc;
+    font-size: 1.5rem;
+    color: white;
     padding: 1rem 0;
     line-height: 1.8;
 }
 
-  @media screen and (max-width: 600px) {
+.line{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 3px;
+    background: orange;
+}
+
+  @media (max-width: 600px) {
 
     .header .menu{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 88%;
+        width: 50%;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -183,14 +205,28 @@ a{
         right: 0;
     }
 
+
     section{
         padding: 2rem;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .heading{
         margin-top: 20%;
         padding-bottom: 1rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .about .row .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .about.content h3{
@@ -202,18 +238,18 @@ a{
     }
 
     .heading span{
-        font-size: 2rem;
-    }
+        font-size: 2.5rem;
+    } 
    
   }
 
-  @media screen and (min-width:600px) and (max-width:768px) {
+  @media (min-width:600px) and (max-width:768px) {
   
     .header .menu{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 88%;
+        width: 50%;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -255,6 +291,7 @@ a{
     .about .row .image{
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .about .row .content{
@@ -274,4 +311,14 @@ a{
         font-size: 3.5rem;
     }
    
+  }
+
+  @media (min-width:768px) {
+
+    .about .row .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
   }
