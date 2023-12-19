@@ -155,7 +155,7 @@ a {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url('/img/web\ bg.png') no-repeat;
+    background: url('/Final/img/web\ bg.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
