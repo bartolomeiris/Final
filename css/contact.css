@@ -298,7 +298,29 @@ a{
     .heading{
         margin-top: 20%;
         padding-bottom: 1rem;
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+
+    .contact .row form{
+        flex: 1 1 10rem;
+        padding: 2rem;
+        text-align: center; 
+    }
+
+    .contact .row form .inputBox{
+        height: 50px;
+    }
+
+    .btn{
+        
+        margin-top: 1rem;
+        padding: .5rem 2rem;
+        font-size: 1.3rem;
+    }
+    
+    .footer .box-container{
+        gap: 2rem;
+        margin-top: 30px;
     }
 
     .footer .box-container .box h3{

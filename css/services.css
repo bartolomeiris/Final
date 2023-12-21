@@ -123,6 +123,7 @@ a{
     margin-top: 12%;
     font-size: 2rem;
     color: white;
+    text-transform: uppercase;
 }
 
 .heading span {
